@@ -1,0 +1,10 @@
+# Binary Tree
+
+This project implements a super basic binary tree data structure in rust.
+Was made for learning purposes.
+
+
+## Features
+
+- Create a binary tree
+- Insert nodes into the binary tree
