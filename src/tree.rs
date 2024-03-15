@@ -37,4 +37,16 @@ impl Tree {
             }
         }
     }
+
+    pub fn search(){
+        // TODO
+    }
+
+    pub fn remove(){
+        // TODO
+    }
+
+    pub fn print(){
+        // TODO
+    }
 }
