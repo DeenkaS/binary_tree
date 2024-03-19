@@ -8,11 +8,15 @@ fn main() {
     let mut vector: Vec<i32> = Vec::new();
     let mut rng = rand::thread_rng();
 
-    for i in 0..10{
+    for _i in 0..10{
         vector.push(rng.gen_range(1..100));
     }
 
+    for number in &vector{
+        binary_tree.add(*number);
+    }
+
     for number in vector{
-        binary_tree.add(number);
+        binary_tree.search(number);
     }
 }

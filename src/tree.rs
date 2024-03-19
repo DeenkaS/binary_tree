@@ -38,15 +38,33 @@ impl Tree {
         }
     }
 
-    pub fn search(){
-        // TODO
+    pub fn search(&mut self, input: i32) {
+        match self.value {
+            None => {
+                println!("Not found: {:?}", input)
+            }
+            Some(value) if input == value => {
+                println!("Found: {:?}", value)
+            }
+            Some(value) if input > value => {
+                self.right.as_mut().unwrap().search(input);
+            }
+            Some(value) if input < value => {
+                self.left.as_mut().unwrap().search(input);
+            }
+            _ => {
+                panic!("something wrong");
+            }
+        }
     }
 
-    pub fn remove(){
-        // TODO
-    }
+    /*
+    pub fn remove() {
+         // TODO
+     }
 
-    pub fn print(){
-        // TODO
-    }
+     pub fn print() {
+         // TODO
+     }
+     */
 }
